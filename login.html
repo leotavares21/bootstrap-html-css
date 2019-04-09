@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Crypto Coin Mindset</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.scss">
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <style>
+        body{
+            background: #eeeeee;
+        }
+        .form-signin{
+            margin: 0 auto;
+        }
+        .btn-login{
+            background: #465b6c;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        
+        
+        function validar(){
+                var nome = document.getElementById("nome").value;
+                var senha = document.getElementById("senha").value;
+                var botao = document.getElementById("btn-login");
+            
+                if(nome == ""){
+                    alert("Prencha o campo nome");
+                    document.getElementById("nome").focus();   
+                }else{
+                    if(senha == ""){
+                        alert("Prencha o campo senha");
+                        document.getElementById("senha").focus();
+                    }
+                }
+        }
+
+    
+    </script>
+    
+</head>
+    
+<body id="login-form">
+   <div class="container">
+       <div class="text-center mt-3">
+            <img src="img/logo1.png" alt="logo mind set">
+       </div>
+            <h1 class="text-center display-4">
+                Login
+            </h1>
+       
+        <form method="post" action="" name="formSign" class="form-signin bg-white col-lg-4 col-md-6 col-sm-10">
+            <div class="form-group">
+                <small><label for="cpfoucnpj">CPF ou CNPJ</label></small>
+                <input type="text" name="cpfoucnpj" id="nome" class="form-control" placeholder="CPF ou CNPJ">
+            </div>
+            
+            <div class="form-group">
+                <small><label for="senha">Senha</label></small>
+                <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha">
+            </div>
+            
+            <div class="text-center mb-4">
+                <small><a href="#" class="text-success">Esqueceu sua senha?</a></small>
+            </div>
+            
+            <div class="form-check">
+                <label for="form-label-check">
+                    <input type="checkbox" name="checar" class="form-input-check" checked>
+                    Salvar senhar?
+                </label>
+            </div>
+        </form>
+       
+        <div class="text-center mt-4">
+            <button type="submit" class="btn-login" id="btn-login" onclick="validar()">Entrar</button>
+        </div>
+   </div>
+</body>
+     
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

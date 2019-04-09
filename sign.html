@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Crypto Coin Mindset</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.scss">
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <style>
+         body{
+            background: #eeeeee;
+        }
+        .form-signin{
+            margin: 0 auto;
+        }
+        .btn-submit{
+            position: relative;
+            display: flex;
+            justify-content: center;        
+        }
+        .btn-login{
+            background: #465b6c;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: absolute;
+            bottom: -100px;
+        }
+        
+        
+        
+    </style>
+</head>  
+<body>
+    <div class="container">
+       <div class="text-center mt-3">
+            <img src="img/logo1.png" alt="logo mind set">
+       </div>
+            <h1 class="text-center display-4">
+                Cadastro
+            </h1>
+        <form class="form-signin bg-white col-lg-4 col-md-6 col-sm-8">
+            <div class="form-group">
+                <small><label for="email">E-mail</label></small>
+                <input type="email" name="email" class="form-control required" placeholder="E-mail" autocomplete="off"  max-length="75" required>
+            </div>
+            
+            <div class="form-group">
+                <small><label for="emailCon">E-mail (confirmação)</label></small>
+                <input type="email" nome="emailCon" class="form-control required" placeholder="E-mail (confirmação)" autocomplete="off" max-length="75" required>
+            </div>
+            
+            <div class="form-group">
+                <small><label for="cpfoucnpj">CPF ou CNPJ</label></small>
+                
+                <small><i class="fa fa-question-circle text-success" data-toggle="tooltip" data-placement="right" data-html="true" title="" onmouseover="$(this).tooltip('show');" style="cursor: default;" data-original-title="O CPF/CNPJ é necessário como forma de identificação para atendermos a regulação brasileira"></i></small>
+                
+                <input type="text" name="cpfoucnpj" class="form-control" placeholder="CPF ou CNPJ" required>
+            </div>
+            
+            <div class="form-group">
+                <small><label for="data">Data de nascimento</label></small>
+                
+                <small><i class="fa fa-question-circle text-success" data-toggle="tooltip" data-placement="right" data-html="true" title="" onmouseover="$(this).tooltip('show');" style="cursor: default;" data-original-title="para Pessoa Física (PF) é requerida a data de nascimento no processo de validação de situação cadastral junto à Receita Federal"></i></small>
+                
+                <input type="date" name="data" class="form-control" required>
+            </div>
+            
+            
+            <div class="form-check">
+                <label for="form-label-check mb-4">
+                    <input type="checkbox" name="form-input-check" class="form-input-check" checked>
+                    <small>
+                        Eu li e concordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade do Serviço</a>.
+                        <br>
+                        Ao me cadastrar, concordo em receber notícias, notificações e ofertas por e-mail do Mercado Bitcoin.
+                    </small>
+                </label>
+            </div>
+            
+            <div class="btn-submit text-center mt-4">
+                <button type="submit" class="btn-login mb-5">Cadastrar</button>
+            </div>
+            
+        </form>
+        
+   </div>
+    
+</body>
+</html>

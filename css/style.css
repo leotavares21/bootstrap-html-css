@@ -1,0 +1,214 @@
+#fundoOne{
+            background: #003554;
+            margin-top: 120px;
+        }
+        .body{
+        	background-image: url(../img/jerusalem.jpg);
+        }
+         .nav-link:hover {
+        	border-bottom: 1px solid #333;
+        }
+        .btn1{
+            border-radius: 25px;
+            color: #fff;
+            font-weight: 500;
+            background: #f7941e;
+            border: none;
+            padding: 14px 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            text-decoration: underline;
+        }
+        .btn3{
+            color: #fff;
+            background: #0c7fbe;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 14px;
+        }
+        .btn3:hover{
+            color: #fff;
+        }
+        .fundo-site{
+            background: #eeeeee;
+        }
+        footer ul{
+            list-style: none;
+        }
+        footer h5{
+            color: #1ea86a;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .fundo-title h4{
+            color: #1ea86a;
+            font-size: 20px;
+        }
+        .fundo-title a{
+            font-size: 40px;
+        }
+        .cartao i{
+            font-size: 30px;
+        }
+        footer a{
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 14px;
+        }
+        footer a:hover{
+            color: #fff;
+        }
+        footer{
+            background: #39474F;
+        }
+        strong{
+            font-weight: 500;
+        }
+        .sobreNos a{
+            color: #D59A1A;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        .sobreNos a:hover{
+            color: #1AC1D5;
+        }
+        .sobreNos i{
+            font-size: 36px;
+        }
+        .tcaixa{
+           padding: 20px 0;
+        }
+        .social p{
+            color: #1ea86a;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            vertical-align: center;
+        }
+        .social ul{
+            list-style: none;
+        }
+        .social li,p{
+            display: inline;
+            margin-left: 10px;
+        }
+        .social a{
+            color: #ccc;
+            font-size: 18px;
+        }
+        .social img{
+            float: left;
+        }
+        .badge-per a{
+            text-decoration: none;
+            color: #465b6c;
+        }
+        .badge{
+            background: #465b6c;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        .btnNav{
+            display: inline-block;
+        }
+        .btnNav ul{
+            list-style: none;
+        }
+        .btnNav li{
+            display: inline-block;
+        }
+        .botao{
+            list-style: none;
+        }
+        .botao li{
+            display: inline;
+        }
+        .botao a{
+            background: #465b6c;
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .botao a:hover{
+            background: #f7941e;
+        }
+        .botao em{
+            background: #ccc;
+            padding: 8px;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: -18px;
+            top: -4px;
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            line-height: 15px;
+        }
+        .btnOne{
+            border-radius: 20px 0 0 20px;
+            padding: 2px 25px 3px 20px;
+        }
+        .btnTwo{
+            border-radius: 0 20px 20px 0;
+            padding: 2px 20px 3px 25px;
+        }
+        #r_BTC{
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .flip-box{
+            width: 600px;
+            height: 100px;
+            margin: 0 auto;
+            line-height: 100px;
+            font-size: 30px;
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+        }
+        .flip-box-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 1.4s;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+        }
+        .flip-box:hover .flip-box-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-box-front, .flip-box-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+        }
+        .flip-box-front{
+          background: #f7941e;
+          border: 2px solid #fff;
+        }
+
+        .flip-box-back {
+          transform: rotateY(180deg);
+          border: 2px solid #f7941e;
+        }
+
+        @media(max-width: 992px) {
+
+        	.navbar{
+        		position: static;
+        		top: 0;
+        	}
+        	#fundoOne {
+        		margin-top: 0;
+        	}
+        }
+        
